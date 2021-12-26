@@ -1,0 +1,45 @@
+<html>
+<head>
+<title>transform</title>
+<style>
+#box
+{
+height:400px;
+width:400px;
+background:rgba(0,0,0,.6);
+border:25px groove aqua;
+margin:200px auto;
+box-sizing:border-box;
+perspective:1000px;
+transform-style:preserve-3d;
+}
+#inner
+{
+height:350px;
+width:350px;
+background:#ff0080;
+color:white;
+text-align:center;
+font-size:30px;
+font-family:impact;
+line-height:350px;
+transition:all ease 2s;
+transform-origin:right;
+}
+#inner:hover
+{
+background:lightgreen;
+box-shadow:0px 0px 10px 2px black;
+transition:all ease 2s;
+transform:skewy(45deg);
+}
+</style>
+</head>
+<body>
+<div id="box">
+<div id="inner">
+anoo verma
+</div>
+</div>
+</body>
+</html>

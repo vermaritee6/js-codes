@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>animation</title>
+<style>
+body
+{
+background:repeating-conic-gradient(navy 5% ,purple 10% , orange 15%);
+}
+#outer
+{
+height:700px;
+border:10px solid black;
+}
+
+#box1
+{
+height:300px;
+width:300px;
+border:10px solid yellow;
+background:aqua;
+margin:200px auto;
+animation-name:techpile;
+animation-duration: 2s;
+animation-iteration-count:infinite;
+animation-diraction:alternate-reverse(to-form,form-to);
+animation-delay:2s;
+border-radius:0px 50px 0px 50px;
+}
+@keyframes techpile
+{
+from
+{
+background:yellow;
+}
+to
+{
+background:red;
+border:10px solid green;
+//transform:rotate(45deg);
+transform:scale(1.3);
+}
+}
+</style>
+</head>
+<body>
+<div id="outer">
+<div id="box1"></div>
+</div>
+</body>
+</html>
